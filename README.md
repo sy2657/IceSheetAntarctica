@@ -146,3 +146,14 @@ array([[2, 2],
        [4, 4],
        [6, 6],
        [9, 9]])
+
+Flattening it turns it into a vector array([2,2, 7,7 , 5,5, ..., 9,9[) of dimension 1 by 20. 
+
+then [:,None] flips the dimension to be (20, 1),
+
+array([[2],
+       [2],
+       [7],
+       [7],... ])
+
+
