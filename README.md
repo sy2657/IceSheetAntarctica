@@ -133,3 +133,4 @@ array([[1, 0],
        [1, 0],
        [1, 0]])
 
+X_star[:,idx_t] is equal to X_star because the rows have the repeated elements.
