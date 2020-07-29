@@ -77,7 +77,7 @@ U_star = np.arange(20) # N x T
 U_star = U_star.reshape(10, 2)
 C_star = U_star
 
-It is equal:
+U_star or C_star is equal to:
 
 array([[ 0,  1],
        [ 2,  3],
