@@ -26,13 +26,46 @@ We test a smaller matrix for T = 2 and N= 10,
 
 We set them to be vectors of entries [1, ..., T] and [1, ..., N]:
 
-t_star = np.arange(10) # T x 1 and
-x_star = np.arange(20) # N x 1 and
-y_star = np.arange(20) # N x 1.
+t_star = np.arange(2) # T x 1 and
+x_star = np.arange(10) # N x 1 and
+y_star = np.arange(10) # N x 1.
 
+and call reshape to make into the shapes of T x 1 and N x 1: 
+
+x_star = x_star.reshape(10, 1)
+y_star = y_star.reshape(10,1)
+t_star = t_star.reshape(2,1)
+
+Then we call the same code
 
 T_star = np.tile(t_star, (1,N)).T # N x T
 X_star = np.tile(x_star, (1,T))
+
+which gives
+
+T_star = 
+array([[0, 1],
+       [0, 1],
+       [0, 1],
+       [0, 1],
+       [0, 1],
+       [0, 1],
+       [0, 1],
+       [0, 1],
+       [0, 1],
+       [0, 1]])
+
+X_star = 
+array([[0, 0],
+       [1, 1],
+       [2, 2],
+       [3, 3],
+       [4, 4],
+       [5, 5],
+       [6, 6],
+       [7, 7],
+       [8, 8],
+       [9, 9]])
 
 We set variables as their code:
 
