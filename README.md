@@ -75,6 +75,7 @@ idx_x = np.random.choice(N, N_data, replace=False)
 
 U_star = np.arange(20) # N x T
 U_star = U_star.reshape(10, 2)
+C_star = U_star
 
 It is equal:
 
@@ -116,3 +117,19 @@ Given the time dimension of 1, we only apply [idx_x, :] and the command
 C_star[idx_x, :] 
 
 has the same effect.
+
+Now we examine what t_data and x_data look like. 
+
+T_star[:,idx_t][idx_x,:] is the same, but elements in each row's array are switched:
+
+array([[1, 0],
+       [1, 0],
+       [1, 0],
+       [1, 0],
+       [1, 0],
+       [1, 0],
+       [1, 0],
+       [1, 0],
+       [1, 0],
+       [1, 0]])
+
