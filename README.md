@@ -134,3 +134,15 @@ array([[1, 0],
        [1, 0]])
 
 X_star[:,idx_t] is equal to X_star because the rows have the repeated elements.
+
+x_data = X_star[:,idx_t][idx_x,:] is then equal to:
+array([[2, 2],
+       [7, 7],
+       [5, 5],
+       [3, 3],
+       [8, 8],
+       [0, 0],
+       [1, 1],
+       [4, 4],
+       [6, 6],
+       [9, 9]])
