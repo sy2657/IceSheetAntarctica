@@ -45,10 +45,10 @@ x = xmat[xmin:xmax, ymin:ymax]/1e6
 y = ymat[xmin:xmax, ymin:ymax]/1e6
 
 # do not flatten
-#x_star = x.flatten()
+x_s = x.flatten()
 #y_star = y.flatten() #flatten
 
-N = x_star.shape[0]
+N = x_s.shape[0]
 
 # flatten the other variables
 #u_star = u.flatten()
